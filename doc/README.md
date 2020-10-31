@@ -9,7 +9,7 @@
 
 Or, documentation about documentation. This file covers how the Lumodoc project 
 goes about maintaining the documentation for the LumoSQL project. The actual
-docs are [here in the doctext directory](../doctext/README.md).
+docs are [here in the doctext directory](../doctext/README.md). 
 
 Table of Contents
 =================
@@ -44,7 +44,7 @@ This chapter covers how LumoSQL documentation is written and maintained.
 The first rule of LumoSQL documentation is "Yes please, we'd be delighted to
 receive patches and pull requests, in any way you want to make them". Anyone
 who has gone to the trouble to write down something useful about LumoSQL is our
-friend. We know there's a lot to fix.
+friend. We know there's a lot to fix. Here is [the TODO](./TODO.md).
 
 If you want to make a quick documentation fix, then edit the Markdown and send
 it to us by any means you like, especially a Github Issue or Pull Request. You
