@@ -10,6 +10,7 @@
 
 * Resolve conflicts between lumodoc:doctext/lumo-quickstart.md and lumosql:README.md . They
   started life as the same document some time ago
+* Adopt Pictchr, in doc/README.md and then the actual diagrams
 * Write up privacy and GDPR
 * Makefile to generate HTML for front page of lumosql.org and push it there
 * Write up the btree.h refactored at https://sqlite.org/src/info/c16c855f7e2ef5bf

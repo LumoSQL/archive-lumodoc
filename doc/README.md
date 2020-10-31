@@ -108,6 +108,8 @@ spaces are sufficient for GFM, but Pandoc requires four spaces.
 
 # Diagram Standards and Tools
 
+*NB This section is out of date. Now that Pikchr exists we [should use it](https://pikchr.org/).*
+
 ## LumoSQL Diagram Signature
 
 The LumoSQL Diagram Signature is identical to the LumoSQL image signature. It should be 
