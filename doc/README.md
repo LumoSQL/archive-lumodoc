@@ -8,8 +8,9 @@
 # Explaining the LumoSQL Documentation Project
 
 Or, documentation about documentation. This file covers how the Lumodoc project 
-goes about maintaining the documentation for the LumoSQL project. The actual
-docs are [here in the doctext directory](../doctext/README.md). 
+goes about maintaining the documentation for the LumoSQL project. i
+
+The actual docs for LumoSQL are [here in the doctext directory](../doctext/README.md). 
 
 Table of Contents
 =================
