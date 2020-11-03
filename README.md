@@ -5,21 +5,24 @@ This is the project that maintains the documentation for
 [SQLite](https://sqlite.org) database library 
 [without forking it](https://lumosql.org/src/not-forking).
 
-Lumodoc is a [Science Communication](https://en.wikipedia.org/wiki/Science_communication) project,
-whereas LumoSQL is a software engineering project to create a new kind of database.
+***Lumodoc*** is a [Science Communication](https://en.wikipedia.org/wiki/Science_communication) project,
+discussing the computer science, mathematics and human factors to do with ***LumoSQL***.
+The software engineering project ***LumoSQL*** has created a new kind of database.
 
-LumoSQL and any other project wanting to link to the LumoSQL docs need to point at the 
-"doc" directory within this project, using this URL: 
+Lumo**SQL** and any other project wanting to link to the LumoSQL docs need to point at the 
+"doc" directory within the Lumo**doc** project using this URL: 
 [https://lumosql.org/doc](https://lumosql.org/doc). That is the finished product.
-This README.md document you are reading is part of the Lumodoc project, not the finished product
+The README.md document you are reading is part of the Lumodoc project, not the finished product
 Lumodoc produces, and it is kept at
 [https://lumosql.org/src/lumodoc/](https://lumosql.org/src/lumodoc/) . The documentation
 for the Lumodoc project is at [https://lumosql.org/src/docdoc](https://lumosql.org/src/docdoc).
 
 ## Version Control and Website
 
-Lumodoc sources and the official website are managed using the [Fossil](https://www.fossil-scm.org/) [SCM](https://en.wikipedia.org/Source_control_management). If you are reading this on Github 
-or anywhere other than <tt>lumosql.org</tt> then you are looking at a read-only mirror.
+Lumodoc sources and the official website are managed using the
+[Fossil](https://www.fossil-scm.org/)[SCM](https://en.wikipedia.org/Source_control_management). 
+If you are reading this on Github or anywhere other than <tt>lumosql.org</tt> then you are 
+looking at a read-only mirror.
 
 ## Contributing
 
