@@ -13,9 +13,9 @@ Lumo**SQL** and any other project wanting to link to the LumoSQL docs need to po
 "doc" directory within the Lumo**doc** project using this URL: 
 [https://lumosql.org/doc](https://lumosql.org/doc). That is the finished product.
 The README.md document you are reading is part of the Lumodoc project, not the finished product
-Lumodoc produces, and it is kept at
+Lumodoc produces, and the master version is kept at
 [https://lumosql.org/src/lumodoc/](https://lumosql.org/src/lumodoc/) . The documentation
-for the Lumodoc project is at [https://lumosql.org/src/docdoc](https://lumosql.org/src/docdoc),
+for the Lumodoc project is [in the "docdoc" directory](https://lumosql.org/src/lumodoc/dir?name=docdoc)
 because it is documentation about documentation.
 
 ## Version Control and Website
@@ -23,7 +23,8 @@ because it is documentation about documentation.
 Lumodoc sources and the official website are managed using the
 [Fossil](https://www.fossil-scm.org/)[SCM](https://en.wikipedia.org/Source_control_management). 
 If you are reading this on Github or anywhere other than <tt>lumosql.org</tt> then you are 
-looking at a read-only mirror.
+looking at a read-only mirror. Mirrors are good and important, but everything else in this 
+project assumes you are working with the master repository for Lumodoc, hosted at lumosql.org.
 
 ## Contributing
 
