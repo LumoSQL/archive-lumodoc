@@ -15,7 +15,8 @@ Lumo**SQL** and any other project wanting to link to the LumoSQL docs need to po
 The README.md document you are reading is part of the Lumodoc project, not the finished product
 Lumodoc produces, and it is kept at
 [https://lumosql.org/src/lumodoc/](https://lumosql.org/src/lumodoc/) . The documentation
-for the Lumodoc project is at [https://lumosql.org/src/docdoc](https://lumosql.org/src/docdoc).
+for the Lumodoc project is at [https://lumosql.org/src/docdoc](https://lumosql.org/src/docdoc),
+because it is documentation about documentation.
 
 ## Version Control and Website
 
@@ -31,7 +32,22 @@ about what you think needs done. You can tell us about corrections to the docume
 or contribute anything else you wish, noting that the forum understands the Markdown format.
 If you want to get more serious we recommend you 
 [download Fossil or build it](https://fossil-scm.org/home/doc/trunk/www/build.wiki) on your 
-local computer.
+local computer. Then run:
+
+```
+fossil clone https://lumosql.org/src/lumodoc
+```
+
+which will download the Fossil repository into lumodoc.fossil, create a directory called "lumodoc",
+and then open the new local repository into that directory. You won't be able to push your 
+commits back up to the central lumodoc repository without a username and password, but otherwise
+you have everything you need to play around with the documentation tools. 
+
+Try this for a start:
+
+```
+fossil ui
+```
 
 # Technical Implementation
 
