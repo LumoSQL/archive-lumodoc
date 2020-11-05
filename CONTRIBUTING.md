@@ -3,7 +3,8 @@
 This is not the [LumoSQL project][lumo], it is the separate **LumoSQL Documentation Project**.
 
 If you wish to make any changes to [the LumoSQL Documentation project’s files][lumodoc], 
-here are some rules and hints to keep in mind while you work.
+this is how you get started with handling the files. For the details of LumoSQL 
+documentation standards and tools, see [the Documentation Handbook](https://lumosql.org/src/lumodoc/doc/trunk/docdoc/README.md).
 
 We try to keep the barriers to contribution low, which is assisted by
 our decision to use [Fossil].
