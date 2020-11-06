@@ -8,6 +8,8 @@
 
 # Tasks for the LumoSQL Documentation Project
 
+Should these become Fossil tickets?
+
 * Resolve conflicts between lumodoc:doctext/lumo-quickstart.md and lumosql:README.md . They
   started life as the same document some time ago
 * Sort out ToCs. Using bin/gh and manually inserting isn't a great solution
