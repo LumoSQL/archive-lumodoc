@@ -18,6 +18,8 @@ Lumodoc produces, and the master version is kept at
 for the Lumodoc project is [in the "docdoc" directory](https://lumosql.org/src/lumodoc/dir?name=docdoc)
 because it is documentation about documentation.
 
+The list of jobs is in the [LumoDoc ToDo long-running forum thread](https://lumosql.org/src/lumodoc/forumpost/8b2baecc9f).
+
 ## Version Control and Website
 
 Lumodoc sources and the official website are managed using the
