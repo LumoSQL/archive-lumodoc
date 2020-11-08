@@ -1,28 +1,24 @@
 # Contributing to the LumoSQL Documentation Project
 
-This is not the [LumoSQL project][lumo], it is the separate **LumoSQL Documentation Project**.
+This is not the [LumoSQL project](https://lumosql.org/src/lumosql), it is the
+separate **LumoSQL Documentation Project**.
 
-If you wish to make any changes to [the LumoSQL Documentation project’s files][lumodoc], 
+If you wish to make any changes to [the LumoSQL Documentation project’s files](https://lumosql.org/src/lumosql), 
 this is how you get started with handling the files. For the details of LumoSQL 
 documentation standards and tools, see [the Documentation Handbook](https://lumosql.org/src/lumodoc/doc/trunk/docdoc/README.md).
 
 We try to keep the barriers to contribution low, which is assisted by
-our decision to use [Fossil].
+our decision to use [Fossil](https://fossil-scm.org/).
 
 If you are familiar with Fossil, you will be able to start editing
 documentation straight away. The rest of this document has useful non-technical
-information about contributing too.
+information about contributing too, so you may want to read it anyway.
 
 ***NOTE! FIXME This document has not yet been fully converted from its orginal over in LumoSQL***
 
-[lumo]:[https://lumosql.org/src/lumosql]
-[lumodoc]:[https://lumosql.org/src/lumodoc]
-[testbuild]: https://lumosql.org/src/lumosql/doc/tip/doc/lumo-test-build.md
-
-
 ## <a id="ghm"></a> The GitHub Mirror Is One-way
 
-The LumoSQL Documentation [Fossil] repository is the official home for
+The LumoSQL Documentation Fossil repository is the official home for
 this project. This is where the action is, and although you 
 can raise PRs on Github for us to feed through Fossil, or send us patches,
 do consider joining us on Fossil. At least on the forum.
@@ -37,23 +33,17 @@ contributions, it’s best done via Fossil, not via GitHub.
 ## <a id="gs-fossil"></a> Getting Started with Fossil
 
 The LumoSQL software project is hosted using the Fossil
-[distributed version control system][dvcs], which provides most of the
-features of GitHub without [the complexities of Git][fvg].
+[distributed version control system](https://en.wikipedia.org/wiki/Distributed_revision_control), 
+which provides most of the features of GitHub without [the complexities of Git](https://fossil-scm.org/home/doc/trunk/www/fossil-v-git.wiki).
 
-Those new to Fossil should at least read its [Quick Start Guide][fqsg],
-followed by [the official Fossil docss][fdoc]. You can download
-[precompiled binaries][fbin] or [install from source](bffs); either way, make 
+Those new to Fossil should at least read its [Quick Start Guide](https://fossil-scm.org/home/doc/trunk/www/quickstart.wiki)
+followed by [the official Fossil docs](https://fossil-scm.org/home/doc/trunk/www/permutedindex.html).
+You can download
+[precompiled binaries](https://fossil-scm.org/index.html/uv/download.html) or 
+[install from source](https://fossil-scm.org/home/doc/trunk/www/build.wiki); either way, make 
 sure you have Fossil 2.14 or higher.
 
-If you have questions about Fossil, ask on [the Fossil forum][ffor].
-
-[bffs]:   https://fossil-scm.org/home/doc/trunk/www/build.wiki
-[fbin]:   https://fossil-scm.org/index.html/uv/download.html
-[fvg]:    https://fossil-scm.org/home/doc/trunk/www/fossil-v-git.wiki
-[dvcs]:   https://en.wikipedia.org/wiki/Distributed_revision_control
-[fdoc]:   https://fossil-scm.org/home/doc/trunk/www/permutedindex.html
-[ffor]:   https://fossil-scm.org/forum/
-[fqsg]:   https://fossil-scm.org/home/doc/trunk/www/quickstart.wiki
+If you have questions about Fossil, ask on [the Fossil forum](https://fossil-scm.org/forum/).
 
 
 ## <a id="fossil-anon" name="anon"></a> Fossil Anonymous Access
@@ -164,8 +154,9 @@ trunk of LumoSQL:
     $ fossil diff > my-changes.patch
 
 Then either upload that file somewhere (e.g. Pastebin) and point to it
-from a [forum post][pfor] . You will need to declare you are using the
-LumoSQL licence. 
+from a [forum post](https://fossil-scm.org/forum) . The LumoSQL team
+will check with you that you are using the 
+[LumoSQL Documentation licence](FIXME).
 
 If your change is more than a small patch, `fossil diff` might not
 incorporate all of the changes you have made. The old unified `diff`
