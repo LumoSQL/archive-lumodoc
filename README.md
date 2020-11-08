@@ -33,6 +33,9 @@ project assumes you are working with the master repository for Lumodoc, hosted a
 Drop in to the [Lumodoc forum](https://lumosql.org/src/lumodoc/forum) and post a message
 about what you think needs done. You can tell us about corrections to the documentation,
 or contribute anything else you wish, noting that the forum understands the Markdown format.
+You can [subscribe to email alerts](https://lumosql.org/src/lumodoc/alerts) for when there
+has been a commit to the repository, or to get copies of all forum posts as email.
+
 If you want to get more serious we recommend you 
 [download Fossil or build it](https://fossil-scm.org/home/doc/trunk/www/build.wiki) on your 
 local computer. Then run:
