@@ -76,7 +76,8 @@ We have not as-yet really started getting into this checklist.
   - Hardware configuration
   - DBMS parameters and version
   - Source code or binary files
-  - Data, schema & queries•Optimization.
+  - Data, schema & queries
+* Optimization.
   - Compilation flags
   - System parameters
 * Apples vs Apples
