@@ -36,10 +36,12 @@ Aims
   compatibility with SQLite by default, and contribute to SQLite where possible.
   This especially includes the SQLite user interface mechanisms of pragmas, 
   library APIs, and commandline parameters.
+ <br>***&#x2713; [DONE and ongoing](https://lumosql.org/src/not-forking/)***
 
 * Legal promise: LumoSQL will not come with legal terms less favourable than 
   SQLite. LumoSQL will try to improve the legal standing and safety worldwide
-  as compared to SQLite.
+  as compared to SQLite. 
+  <br>***&#x2713; [DONE](https://lumosql.org/src/lumosql/LICENCES/README.md)***
 
 * Developer contract: LumoSQL will have stable APIs ([Application Programming Interfaces](https://en.wikipedia.org/wiki/Application_programming_interface#Libraries_and_frameworks)) for features found in multiple unrelated SQLite downstream projects:
   backends, frontends, encryption, networking and more. 
@@ -60,6 +62,7 @@ Short Term Goals
 SQLite btree, ported to a new backend system); the LMDB backend; and the BDB
 backend. Control over these interfaces will be through the
 same user interface mechanisms as the rest of LumoSQL, and SQLite.
+<br>***&#x2713; [DONE]***
 
 * LumoSQL will improve SQLite quality and privacy compliance by introducing
 optional on-disk checksums for storage backends including to the original
@@ -74,8 +77,8 @@ optional row-level checksums
 
 * LumoSQL will provide the benefits of Open Source and an open project
 by continuing to accept and review contributions in an open way, using
-github and having diverse contributors, and being careful to use open
-source licenses
+Fossil and having diverse contributors
+<br>***&#x2713; [DONE and ongoing]***
 
 * LumoSQL will improve SQLite design by intercepting APIs at a very small
 number of critical choke-points, and giving the user optional choices at
@@ -86,6 +89,7 @@ the zero-config and embedded advantages of SQLite
 * LumoSQL will provide a means of tracking upstream SQLite, by making
 sure that anything other than the API chokepoints can be synched at each
 release, or more often if need be
+ <br>***&#x2713; [DONE and ongoing](https://lumosql.org/src/not-forking/)***
 
 * LumoSQL will provide updated, public testing tools, with results published
 and instructions for reproducing the test results. This also means
@@ -93,6 +97,7 @@ excluding parts of the LumoSQL test suite that don't apply to new backends
 
 * LumoSQL will provide benchmarking tools, otherwise as per the testing
 tools
+<br>***&#x2713; [DONE and ongoing](https://lumosql.org/benchmarking)***
 
 * LumoSQL will ensure that new code remains optional by means of modularity at
 compiletime and also runtime. By illustration of modularity, at compiletime
