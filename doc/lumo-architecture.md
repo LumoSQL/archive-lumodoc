@@ -115,9 +115,9 @@ execution of some hundreds of thousand on just one computer.
 
 # Database Storage Systems
 
-LumoSQL has several features that are in advance of every other
+LumoSQL explores several features that are in advance of every other
 widely-used database. With the first prototype complete with an LMDB backend,
-LumoSQL is already the first major SQL database to move away from batch
+LumoSQL is already the first major SQL database to offer an alternative to batch
 processing, since it has a backend that does not use Write-Ahead Logs.  LumoSQL
 also needs to be able to use both the original SQLite and additional storage
 mechanisms, and any or all of these storage backends at once. Not all future
@@ -171,7 +171,7 @@ easier task than SQLite in the sense it is not intended for unpredictable
 embedded use cases, and also that Postgresql has a large amount of code
 dedicated to safe WAL handling.  Even so, Postgresql still requires its users
 to make compromises regarding reliability. For example [this WAL mitigation
-article](https://dzone.com/articles/postgresql- why-and-how-wal-bloats)
+article](https://dzone.com/articles/postgresql-why-and-how-wal-bloats)
 describes a few of the tradeoffs of merge frequency vs reliability in the case
 of a crash. This is a very real problem for every traditional database and that
 includes SQLite - which does not have a fraction of the WAL-handling code of
