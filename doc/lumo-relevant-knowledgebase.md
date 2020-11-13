@@ -104,6 +104,8 @@ Analyser, DB Browser for SQLite, Magnet AXIOM and Oxygen Forensic Detective.)
 | [eXtended Keccak Code Package](https://github.com/XKCP/XKCP)  | current | Code from https://keccak.team for very fast peer-reviewed hashing |
 | [SQL code for Per-table Multi-database Solution](https://www.periscopedata.com/blog/hashing-tables-to-ensure-consistency-in-postgres-redshift-and-mysql) | 2014 | Periscope's SQL row hashing solution for Postgres, Redshift and MySQL |
 | [SQL code for Public Key Row Tracking](https://www.percona.com/blog/2018/10/12/track-postgresql-row-changes-using-public-private-key-signing/) | 2018 | Percona's SQL row integrity solution for Postgresql using public key crypto |
+| [Richard Hipp's SQLite Checksum VFS](https://sqlite.org/cksumvfs.html) | 2019 | This shows the potential benefits from maintaining checksums. There are many limitations, but its more than any other mainstream database ships by default |
+
 
 # List of Relevant Benchmarking and Test Knowledge
 
