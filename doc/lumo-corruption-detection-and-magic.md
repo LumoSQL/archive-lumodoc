@@ -149,8 +149,8 @@ The design goals were:
 > storage device. 
 
 It is important to note that this VFS is among the very first, if not the first,
-of mainstream databases to recognise that all operations should be subject to
-
+of mainstream databases to recognise that all read operations should be subject to
+validation.
 
 The VFS overloads the low-level Read() function like this:
 ```
@@ -163,7 +163,7 @@ The VFS overloads the low-level Read() function like this:
 ```
 
 This means that if a page-level corruption is detected during a read operation
-then SQLITE_IOERR_DATA is returned. This implementation has some problems, including:
+then SQLITE_IOERR_DATA is returned. This implementation has some major problems, including:
 
 * No information about the logical location of this error, eg what row(s) it
   affects. The application knows nothing about how rows map to pages.
@@ -172,7 +172,7 @@ then SQLITE_IOERR_DATA is returned. This implementation has some problems, inclu
   "bytes of reserved space on each page"
   value at offset 20 the SQLite database header must be exactly 8.
 
-Good points to learn from include:
+Good points to learn from this VFS include:
 
 * the various PRAGMAs implememnted for control and ad hoc verification
 * the new data error
@@ -229,9 +229,9 @@ High-level design for row-level checksums is:
 
 1. an internally maintained row hash updated with every change to a row
 2. If a corruption is detected on read, LumoSQL should make maximum relevant
-   fuss. At minimum, [error code 11 is
-   SQLITE_CORRUPT](https://www.sqlite.org/rescode.html#corrupt) but there is also
-   SQLITE_IOERR_DATA .
+   fuss. At minimum, [error code 11 is SQLITE_CORRUPT](https://www.sqlite.org/rescode.html#corrupt) but there is also
+   SQLITE_IOERR_DATA (not SQLITE_IOERR_DATA is missing from the official SQLite 
+   list of error codes, but this seems to be an error.)
 3. This hash is kept in a special column so that user-level logic can do not
    only corruption detection, but also change detection.
 
