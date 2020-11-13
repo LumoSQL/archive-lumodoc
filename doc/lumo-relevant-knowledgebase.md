@@ -75,6 +75,7 @@ backends.
 | [libkvstore](https://github.com/btrask/libkvstore) | 2016 | The k-v store abstraction library used by SQLHeavy |
 | [Comdb's BDB fork](https://github.com/bloomberg/comdb2) | current | The BDB fork has had row-level locking added to it and has other interesting features besides being the second SQLite-on-BDB port |
 | [Karl Malbrain's DB](https://github.com/malbrain/database/wiki) | current | This C library appears to be a maintained and well-researched and documented KV store, but without widespread deployment it is unlikely to be competitive. Perhaps that is unfair, and LumoSQL hopes to find out. The code suggests some interesting approaches to lockless design |
+| [Serial Safety Net Concurrency](www.cs.cmu.edu/~./pavlo/papers/p781-wu.pdf) | 2015 | Karl Malbrain implements the Serial Safety Net (SSN) concurrency control protocol discussed in this paper. This paper also gives an analysis of other concurrency control methods including timestamps.| 
 | [Badger](https://github.com/dgraph-io/badger) | current | Written in Go. Implements MVCC using a separate WAL file for each of its memory tables. Untested and only reviewed briefly. |
 
 
