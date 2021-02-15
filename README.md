@@ -11,11 +11,13 @@ The software engineering project ***LumoSQL*** has created a new kind of databas
 
 Lumo**SQL** and any other project wanting to link to the LumoSQL docs need to point at the 
 "doc" directory within the Lumo**doc** project using this URL: 
-[https://lumosql.org/doc](https://lumosql.org/doc). That is the finished product.
+[https://lumosql.org/doc](https://lumosql.org/doc). That is intended to be the finished product, 
+the output of "make all" within Lumo**doc**.
+
 The README.md document you are reading is part of the Lumodoc project, not the finished product
-Lumodoc produces, and the master version is kept at
-[https://lumosql.org/src/lumodoc/](https://lumosql.org/src/lumodoc/) . The documentation
-for the Lumodoc project is [in the "docdoc" directory](https://lumosql.org/src/lumodoc/dir?name=docdoc)
+Lumodoc produces, and the master version of this README.md is kept at
+[the top level of this repository](/doc/trunk/README.md) . The documentation
+for the Lumodoc project is [in the "docdoc" subdirectory](/doc/trunk/docdoc/README.md)
 because it is documentation about documentation.
 
 The list of jobs is in the [LumoDoc ToDo long-running forum thread](https://lumosql.org/src/lumodoc/forumpost/8b2baecc9f).
@@ -36,7 +38,7 @@ or contribute anything else you wish, noting that the forum understands the Mark
 You can [subscribe to email alerts](https://lumosql.org/src/lumodoc/alerts) for when there
 has been a commit to the repository, or to get copies of all forum posts as email.
 
-If you want to get more serious we recommend you 
+To contribute or to explore how the docs work you need to
 [download Fossil or build it](https://fossil-scm.org/home/doc/trunk/www/build.wiki) on your 
 local computer. Then run:
 
@@ -47,18 +49,46 @@ fossil clone https://lumosql.org/src/lumodoc
 which will download the Fossil repository into lumodoc.fossil, create a directory called "lumodoc",
 and then open the new local repository into that directory. You won't be able to push your 
 commits back up to the central lumodoc repository without a username and password, but otherwise
-you have everything you need to play around with the documentation tools. 
+you have everything you need to play around with the documentation tools.
 
-Try this for a start:
+The "fossil ui" command invokes Fossil's 
+[embedded documentation][https://fossil-scm.org/home/doc/trunk/www/embeddeddoc.wiki] to
+render markdown documents on your local computer. Here is the command to render
+the README.md document you are reading right now:
 
 ```
-fossil ui
+fossil ui --page doc/trunk/README.md
 ```
+
+If you want to render a file in a local directory before it is committed to the repository (which is 
+a much better way of developing - always test before committing!) then you can use the special version "ckout"
+instead of "trunk" like this:
+
+```
+fossil ui --page doc/ckout/README.md
+```
+
+If you want all the internal links in the README to be converted too (that is, links which point to
+other files with the respository rather than URLs for external sites) then you can use "--ckout-alias" 
+like this:
+
+```
+fossil ui --ckout-alias trunk --page doc/trunk/README.md
+```
+
+This allows relative links to appear in embedded documentation of the form:
+
+```
+/doc/trunk/docdoc/README.md
+```
+
+which will then be read off your local directory.
+
 
 # Technical Implementation
 
 The URL https://lumosql.org/doc is an Apache webserver alias pointing to the Fossil repository
-directory [https://lumosql.org/src/lumodoc/doc](https://lumosql.org/src/lumodoc/doc). 
+directory [doc/](https://lumosql.org/src/lumodoc/dir?ci=tip&name=doc). 
 Fossil serves up the current version of the requested file, processing all markup according to 
 [Fossil's Markdown rules](https://fossil-scm.org/home/md_rules), and generating HTML. The
 HTML is then served by Apache just as if it was contained in my-webpage.html .
