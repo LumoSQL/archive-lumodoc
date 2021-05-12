@@ -173,10 +173,13 @@ Encryption is a major problem for SQLite users looking for open code. There are 
 | ------- | ------------- | ----------- |
 | [SQLite Encryption Extension](https://www.sqlite.org/see/doc/release/www/readme.wiki)(SEE)| current | Info about the proprietary, closed source official SQLite crypto solution, illustrating that there is little to be compatible with in the wider SQLite landscape. This is a standalone product. The API is published and used by some open source code. |
 | [SQLCipher](https://github.com/sqlcipher/sqlcipher) | current | Adds at-rest encryption to SQLite [at the pager level](https://www.zetetic.net/sqlcipher/design/), using OpenSSL (the default) or optionally other providers. Uses an open core licensing model, and the less-capable open source version is BSD licensed with a requirement that users publish copyright notices. Uses the SEE API. |
+| [Oracle BDB Encryption](https://docs.oracle.com/cd/E17276_01/html/bdb-sql/sql_encryption.html) | 2018 | Exposes the (old and insecure) BDB encryption facilities via the SEE API with one minor change. |
 | [sqleet](https://github.com/resilar/sqleet) | current | Implements SHA256 encryption, also at the pager level. Public Domain (not Open Source, similar to SQLite) |
 | [sqlite3-dbx](https://github.com/newsoft/sqlite3-dbx) | kinda-current | Accidentally-published but unretracted code on sqlite.org fully documents crypto APIs used by SEE |
 | [SQLite3-Encryption](https://github.com/darkman66/SQLite3-Encryption) | current | No crypto libraries (DIY crypto!) and based on the similar-sounding SQLite3-with-Encryption project | 
 | [wxSqlite3](https://github.com/utelle/wxsqlite3/) | current | wxWidgets C++ wrapper, that also implements SEE-equivalent crypto. Licensed under the LGPL |
+| [LMDB v1.0pre with encryption](https://github.com/LMDB/lmdb/tree/mdb.master3) | current | The LMDB branch mdb.master3 is a prerelease of LMDBv1.0 with page-level encryption. This could be used in an architecturally similar way to the role of BDB encryption in the Oracle BDB+SQLite port |
+
 
 ... there are many more crypto projects for SQLite. 
 
