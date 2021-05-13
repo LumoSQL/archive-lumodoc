@@ -3,7 +3,7 @@
 Version 1.3 – Updated 6th November, 2020
 
 **This file exists because the LumoSQL Project needed it, less than one year
-after starting. We take it seriously. Now we have the 2020 pandemic and
+after starting. We take it seriously. Now we have the 2020-2021 pandemic and
 most of us are feeling a bit fragile... a bit of kindness helps too.**
 
 The LumoSQL Project welcomes contributions from everyone who shares
