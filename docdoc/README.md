@@ -1,6 +1,6 @@
 # Explaining the LumoSQL Documentation Project
 
-Or, documentation about documentation. This file covers how the Lumodoc project 
+This is documentation about documentation, covering how the LumoDoc
 goes about maintaining the documentation for the LumoSQL project.
 
 The actual docs for LumoSQL are [here in the doc directory](https://lumosql.org/src/lumodoc/file?name=doc/README.md).
@@ -31,7 +31,7 @@ LumoSQL Documentation Standards
 
 This chapter covers how LumoSQL documentation is written and maintained. 
 
-![](../doctext/images/lumo-doc-standards-intro.jpg "Image from Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Chinese_books_at_a_library.jpg")
+![](../doc/images/lumo-doc-standards-intro.jpg "Image from Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Chinese_books_at_a_library.jpg")
 
 # Contributions to LumoSQL Documentation are Welcome
 
