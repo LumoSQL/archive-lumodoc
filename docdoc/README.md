@@ -49,14 +49,12 @@ If you want to do something more serious with the documentation then you need
 to read on, learning about our standards, recommended tools and processes. 
 
 * The main website text, under the directory `doc/` .
-** Text, such as this document you are reading, stored in the directory `doc/www`
-** Images, such as PNG or JPEG format, stored in `doc/www/images`
-** Images that are captured from videos and in the docs as thumbnails, also in `doc/www/images`
+** Images, such as PNG or JPEG format, stored in `doc/images`
+** Images that are captured from videos and in the docs as thumbnails, also in `doc/images`
 
 The Markdown files are standalone and complete - you can read them online just as they are.
 
-The file `doc/www/Makefile` is an evolving tool to test these Markdown files, and soon will also
-be for generating images and probably the tables of contents.
+Tables of contents are tricky, and covered below.
 
 # LumoSQL Respects Documentation for SQLite, LMDB and More
 
