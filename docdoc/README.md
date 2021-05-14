@@ -183,19 +183,24 @@ The first lines of all LumoSQL documentation files should always be something li
 
 English is currently the main documentation language. Others are welcome, and
 not just as translations. For example, embedded SQL is particularly important
-in China and we welcome original content. To make it feel welcoming, we have tried
-to make all the illustrative images in LumoSQL inclusive of chinese language.
+in China (due to the number of developers in China creating software containing SQLite for use 
+both in China and worldwide) and we welcome original content. To make it feel welcoming, we have
+tried to make all the illustrative images in LumoSQL have some kind of Chinese
+and/or Mandarin context.
 
 # Creating and Maintaining Table of Contents
 
 LumoSQL had to make a decision about creating navigable ToC indexes. We would rather not 
-write our own tools or scripts. At the moment the following is what we have.
+write our own tools or scripts.
 
 The problem we have is summarised in a [well-known Github bug report](https://github.com/isaacs/github/issues/215):
 
 > When I see a manually generated table of contents, it makes me sad.
 > When I see a huge README that is impossible to navigate without it, it makes me even sadder.
-> LaTeX has it. Gollum has it. Pandoc has it. So why not Github Format Markdown?
+> LaTeX has it. Gollum has it. Pandoc has it. So why not [Fossil]?
+
+Fossil [has made a decision](https://fossil-scm.org/forum/forumpost/cfec8933dc) not to support
+tables of contents inline. That decision seems final.
 
 **LumoSQL Decision as of March 2020**: ToC Markdown must appear in the raw markdown. That means a TOC
 needs to be created and then inserted into the original source markdown file
@@ -219,37 +224,6 @@ hopefully the eventual answer, although as of 2.9 it doesn't seem to work at all
 the documentation claiming it does.
 
 **We are left with ad-hoc processing solutions for now:**
-
-* Use the Github API: The most practical solution we have for now is the
-[github-markdown-toc](https://github.com/ekalinin/github-markdown-toc) bash
-script:
-
-```
-    $ https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
-    $ ./gh-md-toc some-lumosql-document.md > /tmp/toc.md
-```
-
-Then insert the file /tmp/toc.md into the document using your editor. It's not
-a pretty operation but given all the other advantages of Markdown it seems a
-small price to pay. This script can now be found in ```www/bin/gh-md-toc``` .
-It uses the Github API and therefore produces canonical results, so that means
-it needs internet access. After more testing, perhaps we can trust the
-`--insert` option and then include gd-md-toc in the documentation Makefile.
-
-The way API works is made clear in the comments:
-
-	# Converts local md file into html by GitHub
-	# $ curl -X POST --data '{"text": "Hello world github/linguist#1 **cool**, and #1!"}' https://api.github.com/markdown
-	# <p>Hello world github/linguist#1 <strong>cool</strong>, and #1!</p>'"
-
-gh-md-toc will insert a TOC between these markers:
-
-```
-    <!--ts-->
-    <!--te-->
-```
-
-meaning TOC could be handled in the Makefile, but that requires further thought.
 
 * There are also options for doing Markdown TOC in editors such as vim, for example [vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)
 
