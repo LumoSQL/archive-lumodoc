@@ -1,9 +1,19 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-FileCopyrightText: 2020 The LumoSQL Authors -->
+<!-- SPDX-ArtifactOfProjectName: LumoSQL -->
+<!-- SPDX-FileType: Documentation -->
+<!-- SPDX-FileComment: Original by Dan Shearer, 2020 -->
+
 # Explaining the LumoSQL Documentation Project
 
-This is documentation about documentation, covering how the LumoDoc
+This is documentation about documentation, covering how the LumoDoc project
 goes about maintaining the documentation for the LumoSQL project.
 
-The actual docs for LumoSQL are [here in the doc directory](https://lumosql.org/src/lumodoc/file?name=doc/README.md).
+The actual docs for LumoSQL database project are [here in the doc
+directory](https://lumosql.org/src/lumodoc/file?name=doc/README.md). A very few
+of the most detailed technical documents are stored in 
+[the LumoSQL repository](https://lumosql.org/src/lumosql) with the source code they relate
+to.
 
 Table of Contents
 =================
