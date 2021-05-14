@@ -145,14 +145,14 @@ This example is approximately from the top of this chapter:
 
 # Previewing Markdown before Pushing
 
-It's best to check syntax before pushing changes, which means rendering
-Markdown into HTML that is hopefully close to what Github produces. Here are three ways of doing that:
+Lumodoc uses [Fossil embedded documentation](https://fossil-scm.org/home/doc/trunk/www/embeddeddoc.wiki). Fossil
+allows preview of documentation before it is committed, like this:
 
-* The Makefile and support files in bin/ uses Pandoc to render the GFM to HTML in /tmp . Just type 'make 
-* The excellent [Editor.md](https://github.com/pandao/editor.md) does a great job of rendering,
-as can be seen at [The Online Installation](https://pandao.github.io/editor.md/en.html) . You can paste GFM into it and see it rendered, WYSIWYG-style. You can download the HTML for
-Editor.md and run it locally. (Editor.md is also an editor, and it adds its own features, but you don't need to use it for that.)
-* You can use the Preview button on the Github user interface, for people whose workflow that suits.
+<b>
+```
+    fossil ui --page doc/ckout/docdoc/README.md
+```
+</b>
 
 # Copyright for LumoSQL Documentation
 
