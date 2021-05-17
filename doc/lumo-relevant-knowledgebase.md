@@ -169,6 +169,7 @@ performance of the next statement, and so on.
 
 Encryption is a major problem for SQLite users looking for open code. There are no official implementations in open source, although the APIs are documented (seemingly by an SCM mistake years ago (?), see sqlite3-dbx below) and most solutions use the SQLite extension interaface. This means that there are many mutually-incompatible implementations, several of them seeming to be very popular. None appear to have received encryption certification (?) and none seem to publish test results to reassure users about compatibility with SQLite upstream or with the file format. Besides the closed source solution from sqlite.org, there are also at least three other closed source options not listed here. This choice between either closed source or fragmented solutions is a poor security approach from the point of view of maintainance as well as peer-reviewed security. This means that SQLite in 2020 does not have a good approach to privacy.
 
+
 | Project | Last modified | Description | 
 | ------- | ------------- | ----------- |
 | [SQLite Encryption Extension](https://www.sqlite.org/see/doc/release/www/readme.wiki)(SEE)| current | Info about the proprietary, closed source official SQLite crypto solution, illustrating that there is little to be compatible with in the wider SQLite landscape. This is a standalone product. The API is published and used by some open source code. |
@@ -179,6 +180,7 @@ Encryption is a major problem for SQLite users looking for open code. There are 
 | [SQLite3-Encryption](https://github.com/darkman66/SQLite3-Encryption) | current | No crypto libraries (DIY crypto!) and based on the similar-sounding SQLite3-with-Encryption project | 
 | [wxSqlite3](https://github.com/utelle/wxsqlite3/) | current | wxWidgets C++ wrapper, that also implements SEE-equivalent crypto. Licensed under the LGPL |
 | [LMDB v1.0pre with encryption](https://github.com/LMDB/lmdb/tree/mdb.master3) | current | The LMDB branch mdb.master3 is a prerelease of LMDBv1.0 with page-level encryption. This could be used in an architecturally similar way to the role of BDB encryption in the Oracle BDB+SQLite port |
+| [Discussion of SQLCipher vs sqleet](https://github.com/resilar/sqleet/issues/12) | 2019 | Authors of sqleet and wxSQLite3 discuss SQLCipher, covering many weaknesses and some strengths |
 
 
 ... there are many more crypto projects for SQLite. 
