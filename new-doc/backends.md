@@ -10,7 +10,8 @@
 Table of Contents
 =================
 
-   * [LumoSQL Backend Storage Systems](#lumosql-backend-storage-systems)
+   * [LumoSQL Backend Storage Engines](#lumosql-backend-storage-engines)
+   * [SQLite and BDB Compatibility](#sqlite-and-bdb-compatibility)
    * [Notes on the Port of SQLite to BDB](#notes-on-the-port-of-sqlite-to-bdb)
    * [Versions and availability](#versions-and-availability)
    * [Running Out of the Box](#running-out-of-the-box)
@@ -18,11 +19,12 @@ Table of Contents
       * [Files and Directories](#files-and-directories)
       * [Code Changes](#code-changes)
 
-# LumoSQL Backend Storage Systems
-LumoSQL supports the SQLite [b-tree](https://sqlite.org/src4/doc/trunk/www/bt.wiki) format as well as [LMDB]() and BDB discussed below.
+# LumoSQL Backend Storage Engines
+LumoSQL supports the SQLite [b-tree](https://sqlite.org/src4/doc/trunk/www/bt.wiki) format as well as [LMDB](http://www.lmdb.tech/doc/) and [BDB](https://docs.oracle.com/database/bdb181/html/gsg/C/BerkeleyDB-Core-C-GSG.pdf#%5B%7B%22num%22%3A44%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C86.4%2C691.2%2Cnull%5D) discussed below.
 
-[adding new backends](./3.5-lumo-test-build#adding-new-backends)
+[adding new backends](./3.5-lumo-test-build.md#adding-new-backends)
 
+# SQLite and BDB Compatibility
 
 # Notes on the Port of SQLite to BDB
 
@@ -34,6 +36,7 @@ at scale and widely-ported that have the property of being
 one of them.
 
 # Versions and availability
+
 
 BDB is freely available under the GNU AGPL license. It was formerly Sleepycat
 BDB, before Sleepycat was purchased by Oracle.

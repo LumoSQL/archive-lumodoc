@@ -27,12 +27,16 @@ LumoSQL emphasises benchmarking, code reuse and modern database implementation.
 * How LumoSQL Works
 	*[Features](./2.2-features.md)
 		* [API](./api.md)
-		* [BDB Backend](./backends.md)
 		* [Virtual Machine Layer](./virtual-machine.md)
-		* [Rollback](./WALs.md)		
-		* [Online Database Servers](./online-database-servers.md)
-		* [Corruption Detection](./lumo-corruption-detection-and-magic.md)
 		* [Savepoints](./what-are-savepoints.md)
+		
+		* [Encryption](./encryption.md)
+		* [BDB Backend](./backends.md)
+		* [Rollback](./WALs.md)	
+		* [Corruption Detection](./lumo-corruption-detection-and-magic.md)	
+		* [Online Database Servers](./online-database-servers.md)
+		
+
 	
 	* [SQLite-LumoSQL Comparison](./2.3-SQLite-Lumo-comparison.md)
 	* [Relevant Knowledgebase](./2.4-relevant-knowledgebase.md)
