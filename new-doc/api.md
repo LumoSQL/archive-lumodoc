@@ -8,29 +8,20 @@
 Table of Contents
 =================
 
-   * [Changes to SQLite](#changes-to-sqlite)
-      * [Lockfile/tempfile Pushed to Backend](#lockfiletempfile-pushed-to-backend)
-      * [SQLite API Interception Points](#sqlite-api-interception-points)
+   * [SQLite API Interception Points](#sqlite-api-interception-points)
      
-LumoSQL Implementation
-======================
+
 
 ![](./images/lumo-implementation-intro.jpg "Metro Station Construction Futian Shenzhen China, CC license, https://www.flickr.com/photos/dcmaster/36740345496")
 
 
 
-# Changes to SQLite
-
-## Lockfile/tempfile Pushed to Backend
-
 SQLite API Interception Points
 ------------------------------
 
-The process LumoSQL has largely completed as of March 2020 is:
+LumoSQL identifies choke points at which APIs can be intercepted to provide modular choices for backends, front-end parcers, encryption and networking.
+Read more on how to build and test a custom LumoSQL version [here](./3.5-lumo-test-build.md).
 
-1. Identify the correct API choke points to control, then
-2. Find useful chunks of code we want to switch between at these choke
-points to demonstrate the design.
 
    The API interception points are:
 
@@ -41,7 +32,7 @@ Nevertheless, if a user wants to select a particular backend, or have
 encryption or networking etc there will be some setup. Sqlite.org provides a
 large number of controls in pragmas and the commandline already.
 
-  2. SQL processing front ends. Code exists (see [Relevant Codebases](./lumo-relevant-codebases.md)
+  2. SQL processing front ends. Code exists (see [Relevant Codebases](./3.7-relevant-codebases.md)
 that implements MySQL-like behaviour in parallel with supporting SQLite semantics.
 There is a choice codebases to do that with, covering different approaches to the problem.
 
@@ -56,7 +47,7 @@ backend.
 
   4. Storage backends, being a choice of native SQLite btree or LMDB today, and
 swiftly after that other K-V stores. This is the choke point where we expect to
-introduce [libkv](./lumo-relevant-codebases#libkv), or a modification of libkv.
+introduce [libkv](./3.7-relevant-codebases#libkv), or a modification of libkv.
 
   5. Network layers, which will be at all of the above, depending whether they
 are for client access to the parser, or replicating transactions, or being
@@ -65,7 +56,7 @@ plain remote storage etc.
 In most if not all cases it needs to be possible to have multiple choices
 active at once, including the obvious cases of multiple parsers and multiple
 storage backends, for example. This is because one of the important new use
-cases for LumoSQL will be conversion between formats, dialects and protocols.
+cases for LumoSQL is conversion between formats, dialects and protocols.
 
 Having designed the API architecture we can then produce a single LumoSQL tree
 with these choke point APIs in place and proof of two things:
