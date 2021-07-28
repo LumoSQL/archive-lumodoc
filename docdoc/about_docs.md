@@ -51,6 +51,7 @@ discussion on speed and benchmark results page
 1.4-install-LumoSQL.md 
 .
 from quickstart
+only on how to get packages for sqlite3
 
 
 How LumoSQL Works
@@ -63,7 +64,7 @@ introduction and list of features and changes to SQLite:
 api.md
 virtual-machine.md
 what-are-savepoints.md
-encryption.md (currently empty)
+encryption.md (needs a more specific description when implemented)
 backends.md 
 WALs.md
 lumo-corruption-detection-and-magic.md 
@@ -91,10 +92,14 @@ text from https://lumosql.org/src/lumodoc/doc/trunk/README.md
 .
 copy of legal aspects
 
+3.3-benchmarking-how-to.md
+from install, instructions how to perform benchmarking and some results from the past (NEW: currently incomplete)
+
 3.3-benchmarking.md 
 .
 copy of benchmarking and benchmarking literature
 fix the end
+discussion section
 
 
 3.4-not-forking-tool.md 
